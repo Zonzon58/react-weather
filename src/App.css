@@ -1,4 +1,6 @@
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -12,7 +14,7 @@ body {
 
 main {
   max-width: 375px;
-  min-height: 380px;
+  min-height: 400px;
   margin: 100px auto 0;
   border-radius: 10px;
   padding: 30px 10px 0px;
@@ -36,9 +38,7 @@ main {
   align-items: center;
   visibility: hidden;
   opacity: 0;
-  transition: 
-  visibility 0.4s ease-out,
-  opacity 0.4s ease-out;
+  transition: visibility 0.4s ease-out, opacity 0.4s ease-out;
 }
 .loader-container.active {
   visibility: visible;
@@ -69,4 +69,18 @@ main {
 }
 .error-information {
   margin-bottom: 20px;
+}
+
+.wind-speed {
+  font-family: Lato, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.wind-direction {
+  font-family: Lato, sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #212121;
 }
